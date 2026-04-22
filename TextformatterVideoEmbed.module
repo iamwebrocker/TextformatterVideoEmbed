@@ -40,7 +40,7 @@ class TextformatterVideoEmbed extends Textformatter implements ConfigurableModul
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'Video embed for YouTube (and Vimeo)',
-			'version' => 210,
+			'version' => 211,
 			'summary' => 'Enter a full YouTube (or Vimeo) URL by itself in any paragraph (example: https://youtu.be/Wl4XiYadV_k) and this will automatically convert it to an embedded video. This formatter is intended to be run on trusted input. Recommended for use with CKEditor textarea fields.',
 			'author' => 'Ryan Cramer',
 			'href' => 'https://processwire.com/modules/textformatter-video-embed/',
@@ -471,10 +471,10 @@ class TextformatterVideoEmbed extends Textformatter implements ConfigurableModul
 					videoConsentButton_' . $tmpId . '.addEventListener(\'click\', function(){
 						videoConsentWrap_' . $tmpId . '.setAttribute(\'style\',\'\');
 						videoConsentWrap_' . $tmpId . '.innerHTML = videoEmbedCode_' . $tmpId . ';
-						if ( videoConsentCheckSingle' . $tmpId . '.checked ) {
+						if ( videoConsentCheckSingle_' . $tmpId . '.checked ) {
 							document.cookie = \'videoconsent-' . $tmpId . '=yes; path=/\';
 						}
-						if ( videoConsentCheckAll' . $tmpId . '.checked ) {
+						if ( videoConsentCheckAll_' . $tmpId . '.checked ) {
 							document.cookie = \'videoconsent-all=yes; path=/\';
 						}
 					},false);
