@@ -40,7 +40,7 @@ class TextformatterVideoEmbed extends Textformatter implements ConfigurableModul
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'Video embed for YouTube (and Vimeo)',
-			'version' => 202,
+			'version' => 210,
 			'summary' => 'Enter a full YouTube (or Vimeo) URL by itself in any paragraph (example: https://youtu.be/Wl4XiYadV_k) and this will automatically convert it to an embedded video. This formatter is intended to be run on trusted input. Recommended for use with CKEditor textarea fields.',
 			'author' => 'Ryan Cramer',
 			'href' => 'https://processwire.com/modules/textformatter-video-embed/',
